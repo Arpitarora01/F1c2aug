@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f0f0f0;
+}
+nav {
+  background-color: black;
+  color: white;
+  /* In padding 10px for top and bottom
+  and 30px for left and right */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  /* position sticky is used to fixed
+  the top navigation bar of page */
+  position: sticky;
+  /* top-0% means to stick at top only
+  no margin of above */
+  top: 0%;
+  z-index: 1;
+}
+nav > a,
+div > a {
+  color: white;
+  /* font-size: 20px; */
+  text-decoration: none;
+  margin-inline: 10px;
+}
+#books,
+#register {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+#books-div,
+#register-div {
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px darkgray;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: white;
+}
+#books-heading,
+#register-div > h3 {
+  margin-top: 20px;
+  font-weight: 900 bolder;
+  padding-bottom: 15px;
+}
+table,
+td,
+th {
+  border: 2px solid #ececec;
+  border-collapse: collapse;
+  color: #2c2c2c;
+}
+td,
+th {
+  padding: 10px;
+}
+td > a {
+  color: #220fbc;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+tr > th {
+  text-align: left;
+}
+#register-div {
+  width: 640px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+button {
+  background-color: black;
+  border: none;
+  padding: 5px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+input {
+  border: 2px solid #ececec;
+  display: inline-block;
+  padding: 5px;
+}
+input:active {
+  background-color: #e4edfc;
+}
